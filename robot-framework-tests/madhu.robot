@@ -1,0 +1,22 @@
+*** Settings ***
+Library    SeleniumLibrary
+
+
+
+
+*** Variables ***
+${url}      https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+${browser}      chrome
+
+
+
+*** Test Cases ***
+Logintest
+    open browser    ${url}      ${browser}
+    
+
+
+
+*** Keywords ***
+
+

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-12-08T09:53:39.907929" rpa="false" schemaversion="5">
+<suite id="s1" name="Tc1" source="C:\selenium\goofy\robotframework22222\tc1.robot">
+<test id="s1-t1" name="LoginTest" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-08T09:53:40.319344" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-08T09:53:40.318648" elapsed="7.564734"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-08T09:53:47.885490" elapsed="0.044418"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//a[normalize-space()='Signup / Login']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-08T09:53:47.931766" elapsed="0.023873"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-12-08T09:53:47.956503" level="INFO">Clicking element '//a[normalize-space()='Signup / Login']'.</msg>
+<arg>//a[normalize-space()='Signup / Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-08T09:53:47.956096" elapsed="2.359526"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-08T09:53:50.316672" level="INFO">Typing text 'asmitkumar1626@gmail.com' into text field '//input[@data-qa='login-email']'.</msg>
+<arg>//input[@data-qa='login-email']</arg>
+<arg>asmitkumar1626@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-08T09:53:50.316299" elapsed="0.278894"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-08T09:53:50.596105" level="INFO">Typing text 'asmit7750@' into text field '//input[@placeholder='Password']'.</msg>
+<arg>//input[@placeholder='Password']</arg>
+<arg>asmit7750@</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-08T09:53:50.595760" elapsed="0.105535"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>//button[normalize-space()='Login']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-12-08T09:53:50.702431" elapsed="0.144270"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-12-08T09:53:50.847391" level="INFO">Clicking element '//button[normalize-space()='Login']'.</msg>
+<arg>//button[normalize-space()='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-08T09:53:50.847165" elapsed="2.576129"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-12-08T09:53:53.433799" level="INFO">Page title is 'Automation Exercise'.</msg>
+<arg>Automation Exercise</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-12-08T09:53:53.423777" elapsed="0.010130"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//body[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/img[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-12-08T09:53:53.434286" elapsed="0.311421"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-12-08T09:53:53.746958" level="INFO">Simulating Mouse Over on element '//body[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/img[1]'.</msg>
+<arg>//body[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/img[1]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-12-08T09:53:53.746386" elapsed="0.290591"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-12-08T09:53:54.037363" level="INFO">Clicking element '//div[5]//div[1]//div[1]//div[2]//div[1]//a[1]'.</msg>
+<arg>//div[5]//div[1]//div[1]//div[2]//div[1]//a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-08T09:53:54.037210" elapsed="0.085100"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//button[normalize-space()='Continue Shopping']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-12-08T09:53:54.122695" elapsed="0.012361"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-12-08T09:53:54.135474" level="INFO">Clicking element '//button[normalize-space()='Continue Shopping']'.</msg>
+<msg time="2025-12-08T09:53:54.401452" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-48.png"&gt;&lt;img src="selenium-screenshot-48.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-08T09:53:54.401747" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=142.0.7444.176); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff75c8ba235
+	0x7ff75c612650
+	0x7ff75c3a14e5
+	0x7ff75c3fb833
+	0x7ff75c3ed3a8
+	0x7ff75c422b0a
+	0x7ff75c3ecc36
+	0x7ff75c44baba
+	0x7ff75c3eb0ed
+	0x7ff75c3ebf63
+	0x7ff75c8e5d60
+	0x7ff75c8dfe8a
+	0x7ff75c901005
+	0x7ff75c62d73e
+	0x7ff75c634e3f
+	0x7ff75c61b7e4
+	0x7ff75c61b99f
+	0x7ff75c601908
+	0x7ff93e29e8d7
+	0x7ff93ef0c53c
+</msg>
+<arg>//button[normalize-space()='Continue Shopping']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-12-08T09:53:54.135305" elapsed="0.380701">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=142.0.7444.176); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff75c8ba235
+	0x7ff75c612650
+	0x7ff75c3a14e5
+	0x7ff75c3fb833
+	0x7ff75c3ed3a8
+	0x7ff75c422b0a
+	0x7ff75c3ecc36
+	0x7ff75c44baba
+	0x7ff75c3eb0ed
+	0x7ff75c3ebf63
+	0x7ff75c8e5d60
+	0x7ff75c8dfe8a
+	0x7ff75c901005
+	0x7ff75c62d73e
+	0x7ff75c634e3f
+	0x7ff75c61b7e4
+	0x7ff75c61b99f
+	0x7ff75c601908
+	0x7ff93e29e8d7
+	0x7ff93ef0c53c
+</status>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//body[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[16]/div[1]/div[1]/div[1]/img[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2025-12-08T09:53:54.516357" elapsed="0.000043"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<arg>//body[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[16]/div[1]/div[1]/div[1]/img[1]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" start="2025-12-08T09:53:54.516554" elapsed="0.000027"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//body[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[16]/div[1]/div[1]/div[1]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-12-08T09:53:54.516746" elapsed="0.000025"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[3]/a[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2025-12-08T09:53:54.516943" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[3]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-12-08T09:53:54.517080" elapsed="0.000030"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<arg>Automation Exercise - Checkout</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" start="2025-12-08T09:53:54.517572" elapsed="0.000046"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>//a[normalize-space()='Proceed To Checkout']</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="NOT RUN" start="2025-12-08T09:53:54.517789" elapsed="0.000040"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//a[normalize-space()='Proceed To Checkout']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-12-08T09:53:54.518079" elapsed="0.000035"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//textarea[@name='message']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2025-12-08T09:53:54.518304" elapsed="0.000037"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//textarea[@name='message']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-12-08T09:53:54.518613" elapsed="0.000036"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//textarea[@name='message']</arg>
+<arg>good!!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-12-08T09:53:54.518867" elapsed="0.000039"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//a[normalize-space()='Place Order']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-12-08T09:53:54.519178" elapsed="0.000041"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-12-08T09:53:54.519406" elapsed="0.000040"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-12-08T09:53:54.519616" elapsed="0.000035"/>
+</kw>
+<status status="FAIL" start="2025-12-08T09:53:40.317870" elapsed="14.202082">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=142.0.7444.176); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff75c8ba235
+	0x7ff75c612650
+	0x7ff75c3a14e5
+	0x7ff75c3fb833
+	0x7ff75c3ed3a8
+	0x7ff75c422b0a
+	0x7ff75c3ecc36
+	0x7ff75c44baba
+	0x7ff75c3eb0ed
+	0x7ff75c3ebf63
+	0x7ff75c8e5d60
+	0x7ff75c8dfe8a
+	0x7ff75c901005
+	0x7ff75c62d73e
+	0x7ff75c634e3f
+	0x7ff75c61b7e4
+	0x7ff75c61b99f
+	0x7ff75c601908
+	0x7ff93e29e8d7
+	0x7ff93ef0c53c
+</status>
+</test>
+<status status="FAIL" start="2025-12-08T09:53:39.909584" elapsed="14.615856"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tc1" id="s1" pass="0" fail="1" skip="0">Tc1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
