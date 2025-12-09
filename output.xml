@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-12-09T12:03:50.682101" rpa="false" schemaversion="5">
+<suite id="s1" name="Tc1" source="C:\Users\asmit\PycharmProjects\robotproject\testcases\tc1.robot">
+<kw name="browser" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:50.879664" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_argument("--disable-blink-features=AutomationControlled")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-09T12:03:50.879432" elapsed="2.733285"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-09T12:03:53.612993" elapsed="0.027041"/>
+</kw>
+<status status="PASS" start="2025-12-09T12:03:50.878858" elapsed="2.761308"/>
+</kw>
+<test id="s1-t1" name="right_username_wrong_password" line="9">
+<kw name="invalid_scenes">
+<kw name="input_username" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:53.641527" level="INFO">Typing text 'asmit@gmail.com' into text field '//input[@id='Email']'.</msg>
+<arg>//input[@id='Email']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-09T12:03:53.641227" elapsed="0.065330"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2025-12-09T12:03:53.641035" elapsed="0.065689"/>
+</kw>
+<kw name="input_password" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:53.707365" level="INFO">Typing text 'xyz' into text field '//input[@id='Password']'.</msg>
+<arg>//input[@id='Password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-09T12:03:53.707176" elapsed="0.046474"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2025-12-09T12:03:53.706902" elapsed="0.046863"/>
+</kw>
+<kw name="click_login_button" owner="resources">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>//button[normalize-space()='Log in']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-12-09T12:03:53.754155" elapsed="0.015123"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:53.769670" level="INFO">Clicking button '//button[normalize-space()='Log in']'.</msg>
+<arg>//button[normalize-space()='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-09T12:03:53.769465" elapsed="0.586789"/>
+</kw>
+<status status="PASS" start="2025-12-09T12:03:53.753936" elapsed="0.602454"/>
+</kw>
+<kw name="error_message_is_shown" owner="resources">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:54.376025" level="INFO">Current page contains text 'Login was unsuccessful. Please correct the errors and try again.'.</msg>
+<arg>Login was unsuccessful. Please correct the errors and try again.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-09T12:03:54.356848" elapsed="0.019273"/>
+</kw>
+<status status="PASS" start="2025-12-09T12:03:54.356566" elapsed="0.019643"/>
+</kw>
+<arg>asmit@gmail.com</arg>
+<arg>xyz</arg>
+<status status="PASS" start="2025-12-09T12:03:53.640760" elapsed="0.735501"/>
+</kw>
+<status status="PASS" start="2025-12-09T12:03:53.640252" elapsed="0.736238"/>
+</test>
+<test id="s1-t2" name="wrong_username_right_password" line="10">
+<kw name="invalid_scenes">
+<kw name="input_username" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:54.378070" level="INFO">Typing text 'asmi@gmail.com' into text field '//input[@id='Email']'.</msg>
+<arg>//input[@id='Email']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-09T12:03:54.377870" elapsed="0.048034"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2025-12-09T12:03:54.377645" elapsed="0.048413"/>
+</kw>
+<kw name="input_password" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:54.426777" level="INFO">Typing text 'admin123' into text field '//input[@id='Password']'.</msg>
+<arg>//input[@id='Password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-09T12:03:54.426551" elapsed="0.042665"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2025-12-09T12:03:54.426276" elapsed="0.043069"/>
+</kw>
+<kw name="click_login_button" owner="resources">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>//button[normalize-space()='Log in']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-12-09T12:03:54.469802" elapsed="0.010645"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:54.480840" level="INFO">Clicking button '//button[normalize-space()='Log in']'.</msg>
+<arg>//button[normalize-space()='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-09T12:03:54.480625" elapsed="0.515390"/>
+</kw>
+<status status="PASS" start="2025-12-09T12:03:54.469530" elapsed="0.526597"/>
+</kw>
+<kw name="error_message_is_shown" owner="resources">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:55.030363" level="INFO">Current page contains text 'Login was unsuccessful. Please correct the errors and try again.'.</msg>
+<arg>Login was unsuccessful. Please correct the errors and try again.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-09T12:03:54.996522" elapsed="0.033940"/>
+</kw>
+<status status="PASS" start="2025-12-09T12:03:54.996281" elapsed="0.034293"/>
+</kw>
+<arg>asmi@gmail.com</arg>
+<arg>admin123</arg>
+<status status="PASS" start="2025-12-09T12:03:54.377373" elapsed="0.653253"/>
+</kw>
+<status status="PASS" start="2025-12-09T12:03:54.376932" elapsed="0.653972"/>
+</test>
+<test id="s1-t3" name="right_username_empty_password" line="11">
+<kw name="invalid_scenes">
+<kw name="input_username" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:55.032748" level="INFO">Typing text 'asmit@gmail.com' into text field '//input[@id='Email']'.</msg>
+<arg>//input[@id='Email']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-09T12:03:55.032579" elapsed="0.044803"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2025-12-09T12:03:55.032386" elapsed="0.045133"/>
+</kw>
+<kw name="input_password" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:55.078288" level="INFO">Typing text '' into text field '//input[@id='Password']'.</msg>
+<arg>//input[@id='Password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-09T12:03:55.078090" elapsed="0.039302"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2025-12-09T12:03:55.077763" elapsed="0.039752"/>
+</kw>
+<kw name="click_login_button" owner="resources">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>//button[normalize-space()='Log in']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-12-09T12:03:55.117955" elapsed="0.010579"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:55.128859" level="INFO">Clicking button '//button[normalize-space()='Log in']'.</msg>
+<arg>//button[normalize-space()='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-09T12:03:55.128688" elapsed="0.747268"/>
+</kw>
+<status status="PASS" start="2025-12-09T12:03:55.117705" elapsed="0.758381"/>
+</kw>
+<kw name="error_message_is_shown" owner="resources">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:55.887915" level="INFO">Current page contains text 'Login was unsuccessful. Please correct the errors and try again.'.</msg>
+<arg>Login was unsuccessful. Please correct the errors and try again.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-09T12:03:55.876486" elapsed="0.011521"/>
+</kw>
+<status status="PASS" start="2025-12-09T12:03:55.876252" elapsed="0.011839"/>
+</kw>
+<arg>asmit@gmail.com</arg>
+<arg>${EMPTY}</arg>
+<status status="PASS" start="2025-12-09T12:03:55.031862" elapsed="0.856277"/>
+</kw>
+<status status="PASS" start="2025-12-09T12:03:55.031381" elapsed="0.856960"/>
+</test>
+<test id="s1-t4" name="empty_username_right_password" line="12">
+<kw name="invalid_scenes">
+<kw name="input_username" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:55.890086" level="INFO">Typing text '' into text field '//input[@id='Email']'.</msg>
+<arg>//input[@id='Email']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-09T12:03:55.889912" elapsed="0.039871"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2025-12-09T12:03:55.889708" elapsed="0.040269"/>
+</kw>
+<kw name="input_password" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:55.930683" level="INFO">Typing text 'admin123' into text field '//input[@id='Password']'.</msg>
+<arg>//input[@id='Password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-09T12:03:55.930460" elapsed="0.040756"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2025-12-09T12:03:55.930177" elapsed="0.041210"/>
+</kw>
+<kw name="click_login_button" owner="resources">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>//button[normalize-space()='Log in']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-12-09T12:03:55.971936" elapsed="0.010763"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:55.983019" level="INFO">Clicking button '//button[normalize-space()='Log in']'.</msg>
+<arg>//button[normalize-space()='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-09T12:03:55.982849" elapsed="0.544177"/>
+</kw>
+<status status="PASS" start="2025-12-09T12:03:55.971595" elapsed="0.555587"/>
+</kw>
+<kw name="error_message_is_shown" owner="resources">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:57.025665" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-09T12:03:57.025829" level="FAIL">Page should have contained text 'Login was unsuccessful. Please correct the errors and try again.' but did not.</msg>
+<arg>Login was unsuccessful. Please correct the errors and try again.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2025-12-09T12:03:56.527582" elapsed="0.499763">Page should have contained text 'Login was unsuccessful. Please correct the errors and try again.' but did not.</status>
+</kw>
+<status status="FAIL" start="2025-12-09T12:03:56.527353" elapsed="0.500133">Page should have contained text 'Login was unsuccessful. Please correct the errors and try again.' but did not.</status>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>admin123</arg>
+<status status="FAIL" start="2025-12-09T12:03:55.889160" elapsed="1.138406">Page should have contained text 'Login was unsuccessful. Please correct the errors and try again.' but did not.</status>
+</kw>
+<status status="FAIL" start="2025-12-09T12:03:55.888700" elapsed="1.139100">Page should have contained text 'Login was unsuccessful. Please correct the errors and try again.' but did not.</status>
+</test>
+<test id="s1-t5" name="right_username_right_password" line="13">
+<kw name="invalid_scenes">
+<kw name="input_username" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:57.029306" level="INFO">Typing text 'asmit@gmail.com' into text field '//input[@id='Email']'.</msg>
+<arg>//input[@id='Email']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-09T12:03:57.029143" elapsed="0.051299"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2025-12-09T12:03:57.028957" elapsed="0.051601"/>
+</kw>
+<kw name="input_password" owner="resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:57.081193" level="INFO">Typing text 'admin123' into text field '//input[@id='Password']'.</msg>
+<arg>//input[@id='Password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-09T12:03:57.081002" elapsed="0.041514"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2025-12-09T12:03:57.080726" elapsed="0.041906"/>
+</kw>
+<kw name="click_login_button" owner="resources">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>//button[normalize-space()='Log in']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-12-09T12:03:57.123020" elapsed="0.011517"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:57.134878" level="INFO">Clicking button '//button[normalize-space()='Log in']'.</msg>
+<arg>//button[normalize-space()='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-09T12:03:57.134700" elapsed="1.082224"/>
+</kw>
+<status status="PASS" start="2025-12-09T12:03:57.122802" elapsed="1.094233"/>
+</kw>
+<kw name="error_message_is_shown" owner="resources">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-09T12:03:58.229856" level="INFO">Current page contains text 'Login was unsuccessful. Please correct the errors and try again.'.</msg>
+<arg>Login was unsuccessful. Please correct the errors and try again.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-09T12:03:58.217403" elapsed="0.012561"/>
+</kw>
+<status status="PASS" start="2025-12-09T12:03:58.217188" elapsed="0.012884"/>
+</kw>
+<arg>asmit@gmail.com</arg>
+<arg>admin123</arg>
+<status status="PASS" start="2025-12-09T12:03:57.028722" elapsed="1.201418"/>
+</kw>
+<status status="PASS" start="2025-12-09T12:03:57.028236" elapsed="1.202205"/>
+</test>
+<kw name="close_browser" owner="resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-12-09T12:03:58.231519" elapsed="2.105234"/>
+</kw>
+<status status="PASS" start="2025-12-09T12:03:58.231311" elapsed="2.105613"/>
+</kw>
+<status status="FAIL" start="2025-12-09T12:03:50.683412" elapsed="9.653560"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tc1" id="s1" pass="4" fail="1" skip="0">Tc1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
